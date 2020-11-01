@@ -2,6 +2,7 @@
 # by digiteng...06.2020
 # mod by ostende
 # <widget source="session.Event_Now" render="poster" position="0,0" size="185,278" zPosition="1" />
+
 from Renderer import Renderer
 from enigma import ePixmap, eTimer, loadJPG
 from urllib2 import urlopen, quote
@@ -18,7 +19,7 @@ if not os.path.isdir("/tmp/poster"):
 else:
 	path_folder = "/tmp/poster/"
 
-class FroidPoster(Renderer):
+class AMBPoster(Renderer):
 
 	def __init__(self):
 		Renderer.__init__(self)
